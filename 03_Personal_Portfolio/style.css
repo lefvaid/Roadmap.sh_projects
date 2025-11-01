@@ -11,7 +11,10 @@
 
 header {
     text-align: center;
-    margin-bottom: 0px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -95,17 +98,7 @@ h3 {
     flex-direction: column;
 }
 
-header {
-    background: #fff;
-    margin: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex: 1 1 calc(33% - 40px);
-    box-sizing: border-box;
-    flex-direction: row;
-    flex-wrap:wrap;
-}
+
 
 .first {
     background: #fff;
@@ -163,7 +156,6 @@ header {
 }
 
 .second h3 {
-    text-align: left;
     margin-bottom: 1%;
     padding-left: 2%;
 }
@@ -205,6 +197,7 @@ footer {
 }
 
 @media (max-width: 600px) {
+        
     .title {
     padding: 1% 2% 2% 2%;
     }
@@ -220,6 +213,14 @@ footer {
     .sub_blocks section {
         flex: 1 1 100%;
         margin-bottom: 20px;
+    }
+
+    ul:nth-child(2) {
+        text-align: center;
+    }
+
+    h3{
+        text-align: center;
     }
 
     .review_list {
