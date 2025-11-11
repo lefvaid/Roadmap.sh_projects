@@ -7,63 +7,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta name="description" content="`Personal Portfolio of David Bibián`">
     <meta property="og:title" content="Frontend Developer">
-    <meta property="og:description" content="Personal portfolio website to showcase projects and skills">
+    <meta property="og:description" content="Personal portfolio
+        website to showcase projects and skills">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
 </head>
-<body>
-<div class="container">
+<body class="container">
         <header>
             <a href="index.html">
             <h3>David Bibián</h3></a>
             
-            <nav>
+            <nav aria-label="main navigation">
             <a href="index.html">Home</a>
             <div class="vl"></div>
-            <a href="projects.html" target="_blank">Projects</a>
+            <a href="projects.html">Projects</a>
             <div class="vl"></div>
-            <a href="contact.html" target="_blank">Contact</a>
+            <a href="contact.html">Contact</a>
             </nav>
         </header>    
 
 <!--First block: Title, projects, work, education-->    
+<main>    
     <section class="first">
         <section class="title">
             <h1>Frontend Developer</h1>
             <h2>html with proper layout and styling</h2>
         </section>
-
+<!--Projects--> 
         <section class="sub_blocks">
             <section>
                 <h3>Projects</h3>
                 <ul class="project_list">
-                    <li><a href="html_only_portfolio">HTML Only Portfolio</a></li>
+                    <li><a href="html_only_portfolio" target="_blank"> HTML Only Portfolio</a></li>
                     <hr class="solid">
-                    <li><a href="calculator">Calculator</a></li>
+                    <li><a href="calculator" target="_blank">Calculator</a></li>
                     <hr class="solid">
-                    <li><a href="quiz_app">Quiz App</a></li>
+                    <li><a href="quiz_app" target="_blank">Quiz App</a></li>
                     <hr class="solid">
-                    <li><a href="countdown_timer">Countdown timer</a></li>
+                    <li><a href="countdown_timer" target="_blank">Countdown timer</a></li>
                     <hr class="solid">
-                    <li><a href="product_upcoming_page">Product Upcoming Page</a></li>
+                    <li><a href="changelog.html" target="_blank">Changelog</a></li>
                 </ul>
             </section>
             
+<!--Work experience-->             
             <section>
                 <h3>Work Experience</h3>
                 <p>roadmap.sh</p>
                 <p>Solved all the frontend projects</p>
-                <a href="#">Visit my Profile</a>
+                <a href="https://www.linkedin.com/in/davidbibian/" target="_blank">Visit my Profile</a>
                 <hr class="solid">
                 <h3>OpenSource Work</h3>
                 <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
-                <a href="#">Visit my Github Profile</a>
+                <a href="https://github.com/lefvaid" target="_blank">Visit my Github Profile</a>
             </section>
 
+<!--Education--> 
             <section>
                 <h3>Education</h3>
                 <p>Graduated with 2.76 out of 4 CGPA. Won Acme Hachathon. Organized 30 sessions.</p>
@@ -98,11 +101,11 @@
             </div>
         </div>
     </section>
+</main>
 
     <footer>
         <p>© David Bibián all rights reserved 2025</p>
 
     </footer>
-</div>
 </body>
 </html>
