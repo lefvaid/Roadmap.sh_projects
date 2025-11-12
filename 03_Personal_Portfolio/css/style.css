@@ -213,13 +213,29 @@ footer {
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    max-width: 500px;
-    margin: 0 auto;
+    min-width: 50%;
+    gap: 1em;
 }
 
-/*Changelog styles*/
+input::placeholder, textarea::placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: #333;
+}
 
+.send-button {
+    min-width: 20%;
+    min-height: 30px;
+    align-self: center;
+}
+
+.message {
+    min-height: 150px;
+}
+
+
+
+/*Changelog styles*/
 .changelog {
     justify-content: center;
     align-content: top;
@@ -344,4 +360,12 @@ form {
     position: relative;
     bottom: 19px;
     }
+/* Contact mobile styles */
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1em;
+}
+
 }
